@@ -10,6 +10,7 @@ const jwt=require('jsonwebtoken');
 const {isEmail}=require('validator');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
+const PORT = process.env.PORT || 3000;
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'public')));
@@ -181,7 +182,7 @@ app.post('/generate',authentication,async(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log('server is running');
 })
 
