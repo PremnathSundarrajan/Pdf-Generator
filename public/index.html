@@ -60,7 +60,7 @@
             <br>
           
         </form>
-          <a href="http://localhost:3000/login.html" id="login"><button>Login</button></a> <a href="http://localhost:3000/register.html" id="reg"><button>Sign up</button></a>
+          <a href="http://localhost:3000/login" id="login"><button>Login</button></a> <a href="http://localhost:3000/register" id="reg"><button>Sign up</button></a>
                  <button id="logout">Logout</button>
         
         </div>
@@ -80,7 +80,7 @@
             }).then(res=>res.json())
             .then(data=>{
                 if(data.message==='successful'){
-                    window.location.href='http://localhost:3000/login.html';
+                    window.location.href='http://localhost:3000/login';
                 }else{
                     alert(data.message);
                 }
