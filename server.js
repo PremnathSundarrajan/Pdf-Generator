@@ -1,5 +1,5 @@
 //Create .env file before running
-// Inside .env file create ACCESS_TOKEN and SECRET_ACCESS_TOKEN
+// Inside .env file create ACCESS_TOKEN and SECRET_ACCESS_TOKEN,
 const express=require('express');
 const app =express();
 const mongoose=require('mongoose');
