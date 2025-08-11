@@ -60,7 +60,7 @@
             <input type="text" name="password" id="password" placeholder="Enter your password" required minlength="6">
             <button id="reg-but" type="submit">Create Account</button>
         </form>
-        <a href="http://localhost:3000/login" id="log"><button>Login</button></a>        
+        <a href="https://pdf-generator-8u7v.onrender.com/login" id="log"><button>Login</button></a>        
 
         </div>
         
@@ -73,7 +73,7 @@
             const email=document.getElementById('email').value;
             const password=document.getElementById('password').value;
         
-            fetch('http://localhost:3000/register',{
+            fetch('https://pdf-generator-8u7v.onrender.com/register',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -85,7 +85,7 @@
             .then(data=>{
                 if(data.accesstoken){
                   
-                    window.location.href='http://localhost:3000';
+                    window.location.href='https://pdf-generator-8u7v.onrender.com/';
                 }
                 else{
                     alert(data.message);

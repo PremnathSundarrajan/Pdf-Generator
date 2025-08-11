@@ -66,7 +66,7 @@
             <button id="log-but" type="submit">Login</button>
              
         </form>
-        <a href="http://localhost:3000/register" id="sign"><button>Sign up</button></a>
+        <a href="https://pdf-generator-8u7v.onrender.com/register" id="sign"><button>Sign up</button></a>
 
         </div>
        
@@ -81,7 +81,7 @@
             const email=document.getElementById('logemail').value;
             const password=document.getElementById('logpassword').value;
 
-            fetch('http://localhost:3000/login',{
+            fetch('https://pdf-generator-8u7v.onrender.com/login',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -93,7 +93,7 @@
             .then(data=>{
                 if(data.accesstoken){
                     
-                    window.location.href='http://localhost:3000';
+                    window.location.href='https://pdf-generator-8u7v.onrender.com/';
                 }
                 else{
                     alert(data.message);

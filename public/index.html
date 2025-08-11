@@ -60,7 +60,7 @@
             <br>
           
         </form>
-          <a href="http://localhost:3000/login" id="login"><button>Login</button></a> <a href="http://localhost:3000/register" id="reg"><button>Sign up</button></a>
+          <a href="https://pdf-generator-8u7v.onrender.com/login" id="login"><button>Login</button></a> <a href="https://pdf-generator-8u7v.onrender.com/register" id="reg"><button>Sign up</button></a>
                  <button id="logout">Logout</button>
         
         </div>
@@ -71,7 +71,7 @@
 
     <script>
         document.getElementById('logout').addEventListener('click',()=>{
-            fetch('http://localhost:3000/logout',{
+            fetch('https://pdf-generator-8u7v.onrender.com/logout',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -80,7 +80,7 @@
             }).then(res=>res.json())
             .then(data=>{
                 if(data.message==='successful'){
-                    window.location.href='http://localhost:3000/login';
+                    window.location.href='https://pdf-generator-8u7v.onrender.com/login';
                 }else{
                     alert(data.message);
                 }
@@ -96,7 +96,7 @@
 
             
     
-                 fetch('http://localhost:3000/generate',{
+                 fetch('https://pdf-generator-8u7v.onrender.com/generate',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json',
