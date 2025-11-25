@@ -187,9 +187,16 @@ app.post('/generate',authentication,async(req,res)=>{
     
 });
 
+app.post("/salesiq/webhook", (req, res) => {
+    res.status(200).json({
+        reply: "Hello from Express"
+    });
+});
+
 
 
 app.listen(PORT,()=>{
     console.log('server is running');
 })
+
 
